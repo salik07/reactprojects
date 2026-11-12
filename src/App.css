@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #111;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+nav,
+.hero {
+    width: min(100% - 32px, 1280px);
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+    gap: 20px;
+    padding: 18px 0;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-brand img {
+    width: 120px;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+li {
+    font-size: 0.95rem;
+    color: #2d2d2d;
+}
+
+button {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    min-height: 42px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 72px);
+    gap: 32px;
+    padding: 24px 0 48px;
+}
+
+.hero-content {
+    flex: 1;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 6.5vw, 7rem);
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.06em;
+}
+
+.hero p {
+    font-weight: 600;
+    color: grey;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: transparent;
+    color: grey;
+    border: 1px solid grey;
+}
+
+.shop-now {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Footer p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-icons img {
+    width: 120px;
+    height: auto;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: min(100%, 620px);
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0 12px;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .hero-content {
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .hero p {
+        max-width: 620px;
+    }
+
+    .hero-buttons,
+    .Footer,
+    .footer-icons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    nav,
+    .hero {
+        width: min(100% - 20px, 1280px);
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    ul {
+        gap: 12px;
+    }
+
+    li {
+        font-size: 0.85rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hero-buttons button {
+        width: 100%;
+    }
+
+    .Footer {
+        align-items: center;
+    }
+
+    .footer-icons {
+        width: 100%;
+    }
+
+    .footer-icons img {
+        width: 92px;
+    }
+}
